@@ -13,23 +13,25 @@
     <br>
     <form action="index.html" method="get">
         <div class="number-container">
-            <label for="number">Type number 1</label>
-            <input type="text" name="number1" class="number" placeholder="Type number in here">
+            <label for="number1">Type number 1</label>
+            <input type="text" name="number1" id="number1" placeholder="Type number in here">
         </div>
 
         <br> <!-- temp br -->
 
         <div class="number-container">
-            <label for="number">Type number 2</label>
-            <input type="text" name="number2" class="number" placeholder="Type number in here">
+            <label for="number2">Type number 2</label>
+            <input type="text" name="number2" id="number2" placeholder="Type number in here">
         </div>
 
         <br> <!-- temp br -->
 
-        <button type="submit" onclick="">Submit</button>
+        <button type="submit" onclick="calculatingInput(`number1`, `number2`)">Submit</button>
     </form>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
+
 </body>
 
 </html>
