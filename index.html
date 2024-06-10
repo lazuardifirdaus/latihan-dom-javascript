@@ -11,7 +11,7 @@
     <h1>Latihan Javascript DOM</h1>
     <hr>
     <br>
-    <form action="index.html" method="get">
+    <form action="index.html" method="get" onsubmit="calculatingInput('number1', 'number2'); return false;">
         <div class="number-container">
             <label for="number1">Type number 1</label>
             <input type="text" name="number1" id="number1" placeholder="Type number in here">
@@ -26,11 +26,12 @@
 
         <br> <!-- temp br -->
 
-        <button type="submit" onclick="calculatingInput(`number1`, `number2`)">Submit</button>
+        <button type="submit">Submit</button>
     </form>
 
-    <script src="script.js">
-    </script>
+    <div id="checkResult"></div>
+
+    <script src="script.js"></script>
 
 </body>
 
